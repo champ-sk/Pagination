@@ -80,42 +80,42 @@ const Page = () => {
               ))}
             </tbody>
           </table>
-          <div>
-            <button
-              onClick={handlePrevious}
-              disabled={currentPage === 1}
-              style={{
-                backgroundColor: "green",
-                padding: "10px 20px",
-                marginRight: "10px",
-                cursor: currentPage === 1 ? "not-allowed" : "pointer",
-              }}
-            >
-              Previous
-            </button>
-            <span
-              style={{
-                backgroundColor: "green",
-                marginRight: "10px",
-                padding: "10px 20px",
-              }}
-            >
-              {" "}
-              {currentPage}
-            </span>
-            <button
-              onClick={handleNext}
-              disabled={currentPage === totalPages}
-              style={{
-                backgroundColor: "green",
-                padding: "10px 20px",
-                marginRight: "10px",
-                cursor: currentPage === totalPages ? "not-allowed" : "pointer",
-              }}
-            >
-              Next
-            </button>
-          </div>
+
+          <button
+            onClick={handlePrevious}
+            disabled={currentPage === 1}
+            style={{
+              backgroundColor: "green",
+              padding: "10px 20px",
+              marginRight: "10px",
+              cursor: currentPage === 1 ? "not-allowed" : "pointer",
+            }}
+          >
+            Previous
+          </button>
+
+          <span
+            style={{
+              backgroundColor: "green",
+              marginRight: "10px",
+              padding: "10px 20px",
+            }}
+          >
+            {" "}
+            {currentPage}
+          </span>
+          <button
+            onClick={handleNext}
+            disabled={currentPage === totalPages}
+            style={{
+              backgroundColor: "green",
+              padding: "10px 20px",
+              marginRight: "10px",
+              cursor: currentPage === totalPages ? "not-allowed" : "pointer",
+            }}
+          >
+            Next
+          </button>
         </>
       )}
     </div>
