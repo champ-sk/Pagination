@@ -83,7 +83,6 @@ const Page = () => {
 
           <button
             onClick={handlePrevious}
-            disabled={currentPage === 1}
             style={{
               backgroundColor: "green",
               padding: "10px 20px",
